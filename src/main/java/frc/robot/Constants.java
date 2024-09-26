@@ -20,6 +20,14 @@ import swervelib.math.Matter;
  */
 public final class Constants
 {
+  
+
+
+
+
+
+
+
 
   public static final double ROBOT_MASS = (148 - 20.3) * 0.453592; // 32lbs * kg per pound
   public static final Matter CHASSIS    = new Matter(new Translation3d(0, 0, Units.inchesToMeters(8)), ROBOT_MASS);
@@ -45,9 +53,17 @@ public final class Constants
   {
 
     // Joystick Deadband
-    public static final double LEFT_X_DEADBAND  = 0.1;
-    public static final double LEFT_Y_DEADBAND  = 0.1;
-    public static final double RIGHT_X_DEADBAND = 0.1;
+    public static final double LEFT_X_DEADBAND  = 0.05;
+    public static final double LEFT_Y_DEADBAND  = 0.05;
+    public static final double RIGHT_X_DEADBAND = 0.05;
     public static final double TURN_CONSTANT    = 6;
+    public static final int buttonDPort = 8;
+    public static final int buttonAPort = 7;
+    public static final int switchFPort = 2;
+    public static final int switchCPort = 7;
+    public static final int leftStickX = 0;
+    public static final int leftStickY = 1;
+    public static final int rightStickX = 2;
+    public static final int rightStickY = 3;
   }
 }
